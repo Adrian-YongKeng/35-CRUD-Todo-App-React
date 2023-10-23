@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import DeleteTodoModal from "./DeleteTodoModal";
 
@@ -70,7 +70,7 @@ export default function TodoCard({ todo }) {
 
           <DeleteTodoModal
             show={showDeleteModal}
-            handleClose={handleCloseDeleteModal}
+            handleClose={() => handleCloseDeleteModal(false)}
             todo={todo}
           />
         </Card.Body>
