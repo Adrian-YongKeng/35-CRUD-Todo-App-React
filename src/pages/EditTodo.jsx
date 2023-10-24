@@ -27,7 +27,7 @@ export default function EditTodo() {
 
   return (
     <Container>
-      <h1 className="my-3">Add Todo</h1>
+      <h1 className="my-3">Edit Todo</h1>
       <Form onSubmit={updateTodo}>
         <Form.Group className="mb-3" controlId="title">
           <Form.Label>Title</Form.Label>
